@@ -1,0 +1,40 @@
+{
+  "name": "at",
+  "version": "1.0.0",
+  "description": "( The reading's name should be a descriptive phrase about its content. )",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcw124/at.js.git"
+  },
+  "author": "Alex Ponder, Janell Williams Sean Akhlaghi Tony Centeno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcw124/at.js/issues"
+  },
+  "homepage": "https://github.com/jcw124/at.js#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "fs-extra": "^6.0.1",
+    "mongoose": "^5.2.0",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "sequelize": "^4.37.10",
+    "sequelize-cli": "^4.0.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {}
+}
