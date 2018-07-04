@@ -4,7 +4,10 @@ const bodyparser = require('body-parser');
 const exhbs = require('express-handlebars');
 const logger = require('morgan');
 const mongoose = require("mongoose");
+// Parses our HTML and helps us find elements
 const cheerio = require('cheerio')
+// Makes HTTP request for HTML page
+var request = require("request");
 const db = require('./models');
 //=====================================================
 
