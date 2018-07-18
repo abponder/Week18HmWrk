@@ -1,11 +1,4 @@
-// Grab the articles as a json
-$.getJSON("/headlines", function(data) {
-  // For each one
-  for (var i = 0; i < data.length; i++) {
-    // Display the apropos information on the page
-    $("#headlines").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
-  }
-});
+
 
 
 // Whenever someone clicks a p tag
@@ -69,4 +62,21 @@ $(document).on("click", "#savenote", function() {
   // Also, remove the values entered in the input and textarea for note entry
   //$("#titleinput").val("");
   //$("#bodyinput").val("");
+});
+
+//scrape button
+$(document).on("click", "#scrape", function() {
+  console.log("works");
+  $.get("/clear", function(response) {
+    console.log(response);
+      $.get("/scrape", function(response) {
+        console.log(response);
+        location.reload()
+      })
+
+  }) 
+
+
+
+
 });

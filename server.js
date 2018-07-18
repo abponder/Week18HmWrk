@@ -116,6 +116,18 @@ app.get("/scrape", function(req, res) {
   });
 });
 
+app.get("/clear", function(req, res) {
+  db.Headline.remove({})
+    .then(function(datax){
+      res.send(datax)
+      
+    })
+
+
+})
+
+
+
 
 // Route for getting all Headlines from the db
 app.get("/headlines", function(req, res) {
